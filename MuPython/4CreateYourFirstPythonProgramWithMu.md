@@ -13,5 +13,6 @@ print("this is my first code!")
 4. 单击“运行”按钮，程序的输出将显示在文本编辑器和页脚之间的新“输出”区域中。
 5. 点击“停止”按钮返回编辑您的代码
 
+![all ide](imagesMu/4firstcode/firstcode.gif)
 这就是第一个Mu编写并运行了第一个Python程序。 是不是很简单。
 
