@@ -3,7 +3,9 @@ Python的turtle库非常适合初学者学习和使用。以下是一个关于tu
 
 ### 1. 导入turtle模块
 
-在Python中，使用turtle模块之前需要先导入它。有两种常见的导入方式：
+turtle模块是Python的一个标准库，用于绘制图形。在使用前不需要进行安装。
+
+在Python中，使用turtle模块之前需要先导入它。
 
 * **从turtle模块中导入所有内容**
 
@@ -26,6 +28,8 @@ turtle.setup(width=800, height=600)  # 设置画布宽度为800像素，高度�
 turtle模块提供了许多用于控制画笔的函数，如设置画笔颜色、宽度、移动速度等。
 
 * **设置画笔颜色**：`pencolor(color)`
+  red:红色, green:绿色, blue:蓝色, yellow:黄色, cyan:青色, magenta:品红色, black:黑色, white:白色, purple:紫色, orange:橙色, brown:棕色, gray:灰色, pink:粉色, lightblue:浅蓝色, darkblue:深蓝色, lightgreen:浅绿色, darkgreen:深绿色, navy:藏青色, olive:橄榄色, teal:蓝绿色, maroon:栗色, lime:青柠檬色, aqua:水绿色, fuchsia:紫红色, indigo:靛蓝色, silver:银色, gold:金色
+
 * **设置画笔宽度**：`width(size)`
 * **设置画笔速度**：`speed(speed)`，其中speed的值在0（最慢）到10（最快）之间。
 
@@ -52,6 +56,7 @@ turtle模块提供了多种移动画笔的函数。
 turtle.forward(100)  # 画笔前进100像素
 turtle.left(90)      # 画笔左转90度
 turtle.goto(0, 0)    # 将画笔移动到坐标原点
+turtle.left(45)      # 画笔左转45度
 ```
 
 ### 5. 绘制图形
@@ -67,6 +72,11 @@ turtle.goto(0, 0)    # 将画笔移动到坐标原点
 for i in range(4):
     turtle.forward(100)
     turtle.right(90)
+```
+例如，绘制一个半径为50像素的圆：
+
+```python
+turtle.circle(50)
 ```
 
 ### 6. 填充颜色
