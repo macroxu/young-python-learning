@@ -137,10 +137,34 @@ turtle.circle(100)  # 绘制半径为100的圆
 turtle.hideturtle()
 turtle.done()
 ```
+#### 3. 绘制三角形
+    
+```python
+##画三角形
+import turtle
+turtle.speed(1)
+for i in range(3):
+    turtle.forward(100)
+    turtle.right(120)
+```
+
+#### 4. 绘制五角星
+
+```python
+import turtle
+turtle.speed(1)
+for i in range(5):
+    turtle.forward(100)
+    turtle.right(144)
+```
 
 ### 四、高级操作
 
 - **填充颜色**：使用`turtle.begin_fill()`和`turtle.end_fill()`来填充图形。
+
+
+```python
+import turtle
 - **绘制文字**：使用`turtle.write(text, font=("font-name", font-size, "font-type"))`来在画布上绘制文字。
 
 ### 五、注意事项
