@@ -84,6 +84,11 @@ def 最大公约数function(num1, num2):
 num1 = int(input("请输入第一个整数："))
 num2 = int(input("请输入第二个整数："))
 
+# 判断num1和num2的大小
+# 如果num1小于num2，交换两个数
+if num1 < num2:
+    num1, num2 = num2, num1
+
 num最大公约数= 最大公约数function(num1, num2)
 #显示
 print(f"{num1} 和 {num2} 的最大公约数是：{num最大公约数}")
