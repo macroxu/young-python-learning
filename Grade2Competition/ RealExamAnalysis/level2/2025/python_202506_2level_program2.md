@@ -69,8 +69,8 @@
  4. 如果存在，`total`加1，并跳出内层循环，继续判断下一个整数
  5. 输出`total`
  
-
-以下是实现上述逻辑的Python代码 不能用函数：
+#### 3. 示例代码（Python）
+以下是实现上述逻辑的Python代码：
 
 ```python
 
@@ -88,4 +88,37 @@ for n in range(l, r + 1):
             break
 print(total)
  
+```
+
+#### 4. 示例代码2（Python）
+以下是另一种实现上述逻辑的Python代码：
+
+```python
+#接受输入的l和r
+l, r = map(int, input().split())  # 输入两个数作为左右边界数
+#定义变量保存幂和数的数量
+total = 0
+#遍历l到r之间的每一个整数
+for i in range(l, r + 1):
+    #定义变量x和y，表示2的次幂
+    x = 0
+    found = False  # 如果找到符合条件的x和y则变为True
+    #使用嵌套循环遍历所有可能的x和y组合
+    #保证2的次幂之和不超过i
+    while 2 ** x <= i:
+        #定义y=0
+        y = 0
+        #保证2的次幂之和不超过i
+        while 2 ** x + 2 ** y <= i:
+            #判断是否存在2的次幂之和等于i
+            if 2 ** x + 2 ** y == i:
+                #总数加一
+                total += 1
+                found = True  # 找到符合条件的x和y，终止循环
+                break
+            y += 1
+        if found:  # 找到了符合条件的x和y,终止循环
+            break
+        x += 1 # x自增，继续寻找符合条件的x和y
+print(total)
 ```
