@@ -22,3 +22,8 @@ print(total_sum)
 
 
 ### 2 两个逻辑判断组合的逻辑运算
+#### 2.1 逻辑与（logical AND）运算
+
+
+#### 2.2 逻辑或（logical OR）运算   
+
